@@ -1,4 +1,5 @@
 data/**
+weights/**
 **.pth
 **.pkl
 .vscode/settings.json
