@@ -23,3 +23,19 @@ cosa fa convTranspose? perhè avete usato 2x2 con stride 2?
 quando viene chiamato con upsample=false
 cosa fa il bottleneck? perchè c'è un *2 sui canali?
 come vengono creati i token?
+
+che tipo sono i positional embeddings? perchè sono learned e non statici normali? (numero fix token)
+qual'è la grande differenza tra CNN encoder e transformer encoder? (global receptive field vs local)
+che funzione di attivazione usate in transformer encoder? e in resnet invece?
+perchè LN (layer norm) è before e non after? (più stabile, molte le nuove architetture usano questa)
+perchè avete messo 7 encoder layers? (perchè dovevamo matchare il numero di parametri della resnet)
+perchè si aggiunge un LN alla fine del transformer encoder? (perchè l'output non sarebbe normalizzato prima di entrare nel decoder)
+differenza output padding e padding? (uno prima della convTranspose e uno dopo)
+perchè DICE non è sensibile a pixel imbalance? 
+però CE è sensibile all'imbalance? come avete gestito questa cosa?
+come cambia il calcolo del dice tra train ed eval?
+quando ritorno 1 su dice?
+perchè viene usato SGD invece che Adam?
+come avete stoppato il training? come avete selezionato il best model?
+quando serve guardare il p_adjusted e il p_value normale?
+
